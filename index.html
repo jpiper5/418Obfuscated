@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Hey Role Model</title>
+        <meta name="author" content="Jessica Piper">
+        <link href="styles.css" rel="stylesheet">
+        <!-- for the tabs -->
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+        <!-- for the carousel -->
+        <script src="https://malsup.github.io/jquery.cycle2.js"></script>
+        <script src="https://malsup.github.io/jquery.cycle2.carousel.js"></script>
+        <!-- lets carousel have iframes -->
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <!-- my js file -->
+        <script src="script.js" defer></script>
+    </head>
+    <!--All imgs come from heyrolemodel.com-->
+    <body class="darkMode">
+        <header>
+            <a href="#"><img id="logo" src="images/rmLogoWhite.avif" alt="white 'RM' logo with a transparent background"></a>
+            <h1><a href="#">Role Model</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#tour">Tour</a></li>
+                    <li><a href="#music">Music</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button id="darkMode">Light/Dark Mode</button></li>
+                </ul>
+            </nav>
+            <img id="heroImg" src="images/heroImg.jpg" alt="a black and white photo of Role Model in a cowboy hat and leather jacket, his back is towards the camera and he is looking off to the side.">
+        </header>
+        <main>
+            <section id="intro">
+                <h2>Latest Release</h2>
+                <img src="images/kansasAnymore.jpg" alt="a black and white photo of Role Model in a cowboy hat and leather jacket, his back is to the camera looking off to the side.">
+                <p>Role Model's sophomore album, <cite>Kansas Anymore</cite>, delves into the aftermath of a tumultuous relationship. Struggling to find inspiration, he began the project in 2022 while touring but faced a personal crisis by summer 2023, feeling homesick and conflicted about his California-based relationship. Scrapping much of his work, he started anew, crafting a folky, cohesive album influenced by artists like Zach Bryan and War on Drugs. Collaborating with Jonah Shy, Scott Harris, and Noah Conrad, he found his sound and even worked with Ian Fitchuk on "Oh, Gemini." Despite the album's darker themes, tracks like "Look at That Woman" and "Scumbag" capture a nostalgic, summery vibe. Role Model eagerly anticipates performing these songs live, aiming to showcase his growth as a musician and capture the essence of his journey in <cite>Kansas Anymore</cite>.</p>
+            </section>
+            <section id="tour">
+                <h2>No Place Like Home Tour</h2>
+                <div id="tabs">
+                    <ul id="tourList">
+                        <li class="active"><a href="#europeDates">Europe</a></li>
+                        <li><a href="#oceaniaDates">Oceania</a></li>
+                        <li><a href="#usDates">United States</a></li>
+                    </ul>
+                    <section id="europeDates">
+                        <h3 class="sr-only">Europe Tour Dates</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Location</th>
+                                    <th scope="col">Get Tickets</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Nov 10, 2024</th>
+                                    <td>The Academy<br>Dublin, Ireland</td>
+                                    <td><a href="#tour">Tickets</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Nov 12, 2024</th>
+                                    <td>02 Institute Birmingham<br>Birmingham, UK</td>
+                                    <td><a href="#tour">Tickets</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Nov 13, 2024</th>
+                                    <td>O2 Ritz Manchester<br>Manchester, UK</td>
+                                    <td><a href="#tour">Tickets</a></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th scope="row" colspan="3"><a href="#tour">See More Dates</a></th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </section>
+                    <section id="oceaniaDates">
+                        <h3 class="sr-only">Oceania Tour Dates</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Location</th>
+                                    <th scope="col">Get Tickets</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Feb 03, 2025</th>
+                                    <td>Powerstation<br>Auckland, New Zealand</td>
+                                    <td><a href="#tour">Tickets</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Feb 05, 2025</th>
+                                    <td>The Tivioli<br>Brisbane City, Australia</td>
+                                    <td><a href="#tour">Tickets</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Feb 06, 2025</th>
+                                    <td>Enmore Theater<br>Sydney, Australia</td>
+                                    <td><a href="#tour">Tickets</a></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th scope="row" colspan="3"><a href="#tour">See More Dates</a></th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </section>
+                    <section id="usDates">
+                        <h3 class="sr-only">US Tour Dates</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Location</th>
+                                    <th scope="col">Get Tickets</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Feb 24, 2025</th>
+                                    <td>The Van Buren<br>Phoenix, Arizona</td>
+                                    <td><a href="#tour">Tickets</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Nov 12, 2025</th>
+                                    <td>House of Blues Dallas<br>Dallas, Texas</td>
+                                    <td><a href="#tour">Tickets</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Nov 13, 2025</th>
+                                    <td>House of Blues Houston<br>Houston, Texas</td>
+                                    <td><a href="#tour">Tickets</a></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th scope="row" colspan="3"><a href="#tour">See More Dates</a></th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </section>
+                </div>
+            </section>
+            <section id="merch">
+                <h2>Merch</h2>
+            </section>
+            <section id="music">
+                <h2>Music</h2>
+                <!--the iframes wont load unless you have a secure connection -->
+                <!--i included the link to my github page for this so you are able to easily view this section-->
+                <div class="cycle-slideshow"
+                    data-cycle-fx="carousel"
+                    data-cycle-timeout="0"
+                    data-cycle-carousel-visible="2"
+                    data-cycle-slides=">iframe"
+                    data-cycle-youtube=true
+                    data-cycle-youtube-autostart=false>
+        
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/t_N3UgTL8s0?si=VYZO4qeIuo1e8jax" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iLW_0p67ITE?si=MPtD52gboCEulTQP" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zpIOBQ2SPbA?si=jdYb0ffgnIvO7a1X" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/eKtH9zg-xlU?si=cOYj_y5OWjuwDEV3" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/o76neRpa-og?si=FGxMbnuCk_yPXRFz" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div id="musicBtns">
+                    <button id="prevBtn">previous</button>
+                    <button id="nextBtn">next</button>
+                </div>
+            </section>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p id="objectDisplay"></p>
+                <form id="contactUs">
+                    <label for="fullName">Full Name<span class="required">*</span></label>
+                    <span class="message">Please enter your full name</span>
+                    <input type="text" name="fullName" id="fullName">
+
+                    <label for="myEmail">Email</label>
+                    <input type="email" name="myEmail" id="myEmail">
+
+                    <label for="myPhone">Phone (xxx-xxx-xxxx)</label>
+                    <input type="tel" name="myPhone" id="myPhone">
+
+                    <fieldset>
+                        <legend>Preferred Contact Method<span class="required">*</span></legend> 
+                        <input type="radio" name="preferredContact" id="prefEmail" checked>
+                        <label for="prefEmail">Email</label>
+
+                        <input type="radio" name="preferredContact" id="prefPhone">
+                        <label for="prefPhone">Phone</label>
+                        <span class="message">Please enter your email above</span>
+                        <span class="message">Please enter your phone number above</span>
+                    </fieldset>
+
+                    <label for="comments">Comments<span class="required">*</span></label>
+                    <span class="message">Please enter your comments</span>
+                    <textarea name="comments" id="comments"></textarea>
+
+                    <input type="submit" name="submitBtn" id="submitBtn">
+                </form>
+                <div id="modal" class="hidden">
+                    <div id="inner-modal">
+                        <p>There is already a user in local storage. Do you want to erase that user's information and save this information instead?</p>
+                        <button id="confirm">Yes, add the new user to storage</button>
+                        <button id="cancel">No, don't replace the original user in storage</button>
+                    </div>
+                </div>
+                <img src="images/kaImg.jpg" alt="a grid of 19 black and white photos of role model and the blue 'rm' logo">
+            </section>
+        </main>
+        <footer id="copy">
+            <small>&copy; Interscope Records</small>
+            <ul>
+                <li><a href="#copy">Terms & Conditions</a></li>
+                <li><a href="#copy">Privacy Policy</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
